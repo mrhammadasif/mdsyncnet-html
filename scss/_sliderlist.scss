@@ -43,6 +43,7 @@
   width: 24px;
 }
 .slider-content ul ul li a {
+  @extend .flex-grow-1;
   padding: 5px 10px;
   display: block;
   border-bottom: 1px solid #f3f3f3;
