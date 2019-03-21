@@ -1,0 +1,28 @@
+#pinBoxModal {
+  .modal-header {
+    @extend .gradient;
+    color: white;
+  }
+  .modal-title {
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+  }
+  .close {
+    color: white;
+  }
+  .form-group {
+    border: 1px solid #ddd;
+    height: 40px;
+    text-align: center;
+  }
+  .modal-footer {
+    a,
+    .btn {
+      height: 40px;
+      line-height: 40px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

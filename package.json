@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "run-p start styles",
     "start": "browser-sync start -s -w -f 'img' 'css' '*.html'",
-    "styles": "node-sass scss/main.scss css/style.css -w"
+    "styles": "node-sass scss/main.scss css/style.css -rw scss"
   },
   "keywords": [],
   "author": "",
