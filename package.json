@@ -5,9 +5,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "run-p start styles",
     "start": "browser-sync start -s -w -f 'img' 'css' '*.html'",
-    "styles": "node-sass scss/main.scss css/style.css -rw scss"
+    "dev": "run-p start styles",
+    "styles:watch": "node-sass scss/main.scss css/style.css -rw scss",
+    "styles": "node-sass scss/main.scss css/style.css"
   },
   "keywords": [],
   "author": "",
