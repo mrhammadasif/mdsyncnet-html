@@ -14,7 +14,8 @@ page {
     padding: 30px 5px;
     background-size: cover;
     position: fixed;
-    height: 100%;
+    min-height: 100%;
+    overflow: auto;
     width: 100%;
     .splash-btn {
       margin-top: 20px;
@@ -35,9 +36,8 @@ page {
       position: absolute;
     }
     .contact-header {
-      min-height: 150px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      // min-height: 150px;
+      padding: 10px 0;
     }
     .profile-big {
       max-width: 180px;
@@ -46,8 +46,7 @@ page {
   &.home {
     min-height: 100vh;
     .home-header {
-      height: 150px;
-      padding-top: 20px;
+      height: 130px;
     }
     .home-footer {
       // bottom: 0;
@@ -70,7 +69,7 @@ page {
       background: #ffffff;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
       p {
-        margin: 20px 0;
+        margin: 10px 0 15px;
         font-weight: bold;
         color: #050719;
       }
@@ -80,10 +79,10 @@ page {
       .n4 {
         background-repeat: no-repeat;
         background-position: center center;
-        width: 64px;
-        height: 64px;
+        width: 48px;
+        height: 48px;
         background-size: contain;
-        margin: 30px 0 20px;
+        margin: 40px 0 20px;
       }
       .n1 {
         background-image: url(../img/menu_1.png);
