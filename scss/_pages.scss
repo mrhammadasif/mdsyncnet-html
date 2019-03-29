@@ -133,3 +133,21 @@ page {
     }
   }
 }
+
+.preload-images {
+  opacity: 0;
+  height: 1px;
+  overflow: hidden;
+  .n1 {
+    background-image: url(../img/menu_1_active.png);
+  }
+  .n2 {
+    background-image: url(../img/menu_2_active.png);
+  }
+  .n3 {
+    background-image: url(../img/menu_3_active.png);
+  }
+  .n4 {
+    background-image: url(../img/menu_4_active.png);
+  }
+}
