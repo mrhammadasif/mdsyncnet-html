@@ -15,6 +15,15 @@
         <div class="text-center w-100 d-flex align-items-center">
           <img src="/img/ic_chevron_left.png" style="max-width: 12px;" alt="" onclick="window.history.go(-1)" />
           <p class="text f18 bold text-white flex-grow-1">Cardiology</p>
+          <select class="header-select">
+            <option value=""> </option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
+          </select>
+          <div class="vertical-separator"></div>
+          <img src="/img/ic_search.png" style="max-height: 24px;" alt="" />
         </div>
       </div>
       <div class="calendar">
@@ -127,7 +136,7 @@
       </div>
       <divider></divider>
       <div class="listview flex-grow-1">
-        <div class="listitem title">Consultants</div>
+        <div class="listitem title bg-bg">Consultants</div>
         <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
           <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
           <div class="flex-grow-1 px-2">
@@ -146,7 +155,7 @@
           <img src="img/ic_allday.png" class="allday" />
           <span>09 AM - 05PM</span>
         </a>
-        <div class="listitem title">ER On Call</div>
+        <div class="listitem title bg-bg">ER On Call</div>
         <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
           <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
           <div class="flex-grow-1 px-2">
@@ -205,7 +214,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
       function calendarCollapse() {
         $("#calendar-full").collapse("toggle")

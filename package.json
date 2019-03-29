@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "browser-sync start -s -w -f 'img' 'css' '*.html'",
-    "dev": "run-p start styles",
+    "dev": "run-p start styles:watch",
     "styles:watch": "node-sass scss/main.scss css/style.css -rw scss",
     "styles": "node-sass scss/main.scss css/style.css"
   },
