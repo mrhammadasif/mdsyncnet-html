@@ -1,225 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>MDSYNCNET</title>
-  </head>
-  <body>
-    <page class="fixed withnav directory d-flex flex-column align-items-stretch justify-content-start">
-      <div class="header d-flex align-items-center justify-content-between px-4">
-        <div class="text-center w-100 d-flex align-items-center">
-          <img src="/img/ic_chevron_left.png" style="max-width: 12px;" alt="" onclick="window.history.go(-1)" />
-          <p class="text f18 bold text-white flex-grow-1">Cardiology</p>
-          <select class="header-select">
-            <option value=""> </option>
-            <option value="">Option 1</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-            <option value="">Option 4</option>
-          </select>
-          <div class="vertical-separator"></div>
-          <img src="/img/ic_search.png" style="max-height: 24px;" alt="" />
-        </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>MDSYNCNET</title>
+</head>
+
+<body>
+  <page class="fixed withnav directory d-flex flex-column align-items-stretch justify-content-start">
+    <div class="header d-flex align-items-center justify-content-between px-4">
+      <div class="text-center w-100 d-flex align-items-center">
+        <img src="/img/ic_chevron_left.png" style="max-width: 12px;" alt="" onclick="window.history.go(-1)" />
+        <p class="text f18 bold text-white flex-grow-1">Cardiology</p>
+        <select class="header-select">
+          <option value=""> </option>
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+          <option value="">Option 4</option>
+        </select>
+        <div class="vertical-separator"></div>
+        <img src="/img/ic_search.png" style="max-height: 24px;" alt="" />
       </div>
-      <div class="calendar">
-        <div class="calendar-header d-flex align-items-center my-2 px-3">
-          <i class="fas fa-chevron-left   gradient-text " style="font-size: 20px;"></i>
-          <p class="flex-grow-1 text-center" style="font-size: 20px;font-weight: bold;" onclick="calendarCollapse()">Month <span style="font-weight: normal;">2019</span></p>
-          <i class="fas fa-chevron-right  gradient-text  " style="font-size: 20px;"></i>
-        </div>
-        <div class="calendar-weeks d-flex align-items-center justify-content-end my-2 px-3">
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">M</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">T</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">W</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">T</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">F</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">S</div>
-          <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">S</div>
-        </div>
+    </div>
+    <div class="calendar">
+      <div class="calendar-header d-flex align-items-center justify-content-center my-2 px-3">
+        <i class="fas fa-chevron-left   gradient-text " style="font-size: 20px;"></i>
+        <p class="text-center mx-4" style="font-size: 20px;font-weight: bold;" onclick="calendarCollapse()">Month <span
+            style="font-weight: normal;">2019</span></p>
+        <i class="fas fa-chevron-right  gradient-text  " style="font-size: 20px;"></i>
+      </div>
+      <div class="calendar-weeks d-flex align-items-center justify-content-end my-2 px-3">
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">M</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">T</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">W</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">T</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">F</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">S</div>
+        <div class="col text-uppercase text-center" style="font-size: 12px;color: black;font-weight: bold;">S</div>
+      </div>
 
-        <div id="calendar-rows" class="collapse show carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="calendar-single-row px-3">
-                <div class="calendar-row d-flex align-items-center justify-content-end">
-                  <div class="font-weight-bold text-uppercase col date-selector">1</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">2</div>
-                  <div class="font-weight-bold text-uppercase active col date-selector">3</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">4</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">5</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">6</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">7</div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="calendar-single-row px-3">
-                <div class="calendar-row d-flex align-items-center justify-content-end">
-                  <div class="font-weight-bold text-uppercase col date-selector">8</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">9</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">10</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">11</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">12</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">13</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">14</div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="calendar-single-row px-3">
-                <div class="calendar-row d-flex align-items-center justify-content-end">
-                  <div class="font-weight-bold text-uppercase col date-selector">15</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">16</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">17</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">19</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">20</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">21</div>
-                  <div class="font-weight-bold text-uppercase col date-selector">22</div>
-                </div>
+      <div id="calendar-rows" class="collapse show carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="calendar-single-row px-3">
+              <div class="calendar-row d-flex align-items-center justify-content-end">
+                <div class="font-weight-bold text-uppercase col date-selector">1</div>
+                <div class="font-weight-bold text-uppercase col date-selector">2</div>
+                <div class="font-weight-bold text-uppercase active col date-selector">3</div>
+                <div class="font-weight-bold text-uppercase col date-selector">4</div>
+                <div class="font-weight-bold text-uppercase col date-selector">5</div>
+                <div class="font-weight-bold text-uppercase col date-selector">6</div>
+                <div class="font-weight-bold text-uppercase col date-selector">7</div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div id="calendar-full" class="calendar-full collapse px-3">
-          <div class="calendar-row d-flex align-items-center justify-content-end">
-            <div class="font-weight-bold text-uppercase col date-selector">1</div>
-            <div class="font-weight-bold text-uppercase col date-selector">2</div>
-            <div class="font-weight-bold text-uppercase active col date-selector">3</div>
-            <div class="font-weight-bold text-uppercase col date-selector">4</div>
-            <div class="font-weight-bold text-uppercase col date-selector">5</div>
-            <div class="font-weight-bold text-uppercase col date-selector">6</div>
-            <div class="font-weight-bold text-uppercase col date-selector">7</div>
+          <div class="carousel-item">
+            <div class="calendar-single-row px-3">
+              <div class="calendar-row d-flex align-items-center justify-content-end">
+                <div class="font-weight-bold text-uppercase col date-selector">8</div>
+                <div class="font-weight-bold text-uppercase col date-selector">9</div>
+                <div class="font-weight-bold text-uppercase col date-selector">10</div>
+                <div class="font-weight-bold text-uppercase col date-selector">11</div>
+                <div class="font-weight-bold text-uppercase col date-selector">12</div>
+                <div class="font-weight-bold text-uppercase col date-selector">13</div>
+                <div class="font-weight-bold text-uppercase col date-selector">14</div>
+              </div>
+            </div>
           </div>
-          <div class="calendar-row d-flex align-items-center justify-content-end">
-            <div class="font-weight-bold text-uppercase col date-selector">8</div>
-            <div class="font-weight-bold text-uppercase col date-selector">9</div>
-            <div class="font-weight-bold text-uppercase col date-selector">10</div>
-            <div class="font-weight-bold text-uppercase col date-selector">11</div>
-            <div class="font-weight-bold text-uppercase col date-selector">12</div>
-            <div class="font-weight-bold text-uppercase col date-selector">13</div>
-            <div class="font-weight-bold text-uppercase col date-selector">14</div>
-          </div>
-          <div class="calendar-row d-flex align-items-center justify-content-end">
-            <div class="font-weight-bold text-uppercase col date-selector">15</div>
-            <div class="font-weight-bold text-uppercase col date-selector">16</div>
-            <div class="font-weight-bold text-uppercase col date-selector">17</div>
-            <div class="font-weight-bold text-uppercase col date-selector">19</div>
-            <div class="font-weight-bold text-uppercase col date-selector">20</div>
-            <div class="font-weight-bold text-uppercase col date-selector">21</div>
-            <div class="font-weight-bold text-uppercase col date-selector">22</div>
-          </div>
-          <div class="calendar-row d-flex align-items-center justify-content-end">
-            <div class="font-weight-bold text-uppercase col date-selector">23</div>
-            <div class="font-weight-bold text-uppercase col date-selector">24</div>
-            <div class="font-weight-bold text-uppercase col date-selector">25</div>
-            <div class="font-weight-bold text-uppercase col date-selector">26</div>
-            <div class="font-weight-bold text-uppercase col date-selector">27</div>
-            <div class="font-weight-bold text-uppercase col date-selector">28</div>
-            <div class="font-weight-bold text-uppercase col date-selector">29</div>
-          </div>
-          <div class="calendar-row d-flex align-items-center justify-content-end">
-            <div class="font-weight-bold text-uppercase col date-selector">30</div>
-            <div class="font-weight-bold text-uppercase col date-selector">31</div>
-            <div class="font-weight-bold text-uppercase col">&nbsp;</div>
-            <div class="font-weight-bold text-uppercase col">&nbsp;</div>
-            <div class="font-weight-bold text-uppercase col">&nbsp;</div>
-            <div class="font-weight-bold text-uppercase col">&nbsp;</div>
-            <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+          <div class="carousel-item">
+            <div class="calendar-single-row px-3">
+              <div class="calendar-row d-flex align-items-center justify-content-end">
+                <div class="font-weight-bold text-uppercase col date-selector">15</div>
+                <div class="font-weight-bold text-uppercase col date-selector">16</div>
+                <div class="font-weight-bold text-uppercase col date-selector">17</div>
+                <div class="font-weight-bold text-uppercase col date-selector">19</div>
+                <div class="font-weight-bold text-uppercase col date-selector">20</div>
+                <div class="font-weight-bold text-uppercase col date-selector">21</div>
+                <div class="font-weight-bold text-uppercase col date-selector">22</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <divider></divider>
-      <div class="listview flex-grow-1">
-        <div class="listitem title bg-bg">Consultants</div>
-        <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
-          <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
-          <div class="flex-grow-1 px-2">
-            <p class="text  f16 bold">Dermatology</p>
-            <span>Christian Leupold-Wendling</span>
-          </div>
-          <img src="img/ic_allday.png" class="allday" />
-          <span>09 AM - 05PM</span>
-        </a>
-        <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
-          <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
-          <div class="flex-grow-1 px-2">
-            <p class="text  f16 bold">Surgery</p>
-            <span>Christian Leupold-Wendling</span>
-          </div>
-          <img src="img/ic_allday.png" class="allday" />
-          <span>09 AM - 05PM</span>
-        </a>
-        <div class="listitem title bg-bg">ER On Call</div>
-        <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
-          <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
-          <div class="flex-grow-1 px-2">
-            <p class="text  f16 bold">Hospitalist</p>
-            <span>Christian Leupold-Wendling</span>
-          </div>
-          <img src="img/ic_allday.png" class="allday" />
-          <span>09 AM - 05PM</span>
-        </a>
-        <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
-          <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
-          <div class="flex-grow-1 px-2">
-            <p class="text  f16 bold">Surgery</p>
-            <span>Christian Leupold-Wendling</span>
-          </div>
-          <img src="img/ic_allday.png" class="allday" />
-          <span>09 AM - 05PM</span>
-        </a>
-        <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
-          <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
-          <div class="flex-grow-1 px-2">
-            <p class="text  f16 bold">General Surgery</p>
-            <span>Christian Leupold-Wendling</span>
-          </div>
-          <img src="img/ic_allday.png" class="allday" />
-          <span>09 AM - 05PM</span>
-        </a>
+
+      <div id="calendar-full" class="calendar-full collapse px-3">
+        <div class="calendar-row d-flex align-items-center justify-content-end">
+          <div class="font-weight-bold text-uppercase col date-selector">1</div>
+          <div class="font-weight-bold text-uppercase col date-selector">2</div>
+          <div class="font-weight-bold text-uppercase active col date-selector">3</div>
+          <div class="font-weight-bold text-uppercase col date-selector">4</div>
+          <div class="font-weight-bold text-uppercase col date-selector">5</div>
+          <div class="font-weight-bold text-uppercase col date-selector">6</div>
+          <div class="font-weight-bold text-uppercase col date-selector">7</div>
+        </div>
+        <div class="calendar-row d-flex align-items-center justify-content-end">
+          <div class="font-weight-bold text-uppercase col date-selector">8</div>
+          <div class="font-weight-bold text-uppercase col date-selector">9</div>
+          <div class="font-weight-bold text-uppercase col date-selector">10</div>
+          <div class="font-weight-bold text-uppercase col date-selector">11</div>
+          <div class="font-weight-bold text-uppercase col date-selector">12</div>
+          <div class="font-weight-bold text-uppercase col date-selector">13</div>
+          <div class="font-weight-bold text-uppercase col date-selector">14</div>
+        </div>
+        <div class="calendar-row d-flex align-items-center justify-content-end">
+          <div class="font-weight-bold text-uppercase col date-selector">15</div>
+          <div class="font-weight-bold text-uppercase col date-selector">16</div>
+          <div class="font-weight-bold text-uppercase col date-selector">17</div>
+          <div class="font-weight-bold text-uppercase col date-selector">19</div>
+          <div class="font-weight-bold text-uppercase col date-selector">20</div>
+          <div class="font-weight-bold text-uppercase col date-selector">21</div>
+          <div class="font-weight-bold text-uppercase col date-selector">22</div>
+        </div>
+        <div class="calendar-row d-flex align-items-center justify-content-end">
+          <div class="font-weight-bold text-uppercase col date-selector">23</div>
+          <div class="font-weight-bold text-uppercase col date-selector">24</div>
+          <div class="font-weight-bold text-uppercase col date-selector">25</div>
+          <div class="font-weight-bold text-uppercase col date-selector">26</div>
+          <div class="font-weight-bold text-uppercase col date-selector">27</div>
+          <div class="font-weight-bold text-uppercase col date-selector">28</div>
+          <div class="font-weight-bold text-uppercase col date-selector">29</div>
+        </div>
+        <div class="calendar-row d-flex align-items-center justify-content-end">
+          <div class="font-weight-bold text-uppercase col date-selector">30</div>
+          <div class="font-weight-bold text-uppercase col date-selector">31</div>
+          <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+          <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+          <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+          <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+          <div class="font-weight-bold text-uppercase col">&nbsp;</div>
+        </div>
       </div>
+    </div>
+    <divider></divider>
+    <div class="listview flex-grow-1">
+      <div class="listitem title bg-bg">Consultants</div>
+      <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
+        <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
+        <div class="flex-grow-1 px-2">
+          <p class="text  f16 bold">Dermatology</p>
+          <span>Christian Leupold-Wendling</span>
+        </div>
+        <img src="img/ic_allday.png" class="allday" />
+        <span>09 AM - 05PM</span>
+      </a>
+      <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
+        <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
+        <div class="flex-grow-1 px-2">
+          <p class="text  f16 bold">Surgery</p>
+          <span>Christian Leupold-Wendling</span>
+        </div>
+        <img src="img/ic_allday.png" class="allday" />
+        <span>09 AM - 05PM</span>
+      </a>
+      <div class="listitem title bg-bg">ER On Call</div>
+      <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
+        <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
+        <div class="flex-grow-1 px-2">
+          <p class="text  f16 bold">Hospitalist</p>
+          <span>Christian Leupold-Wendling</span>
+        </div>
+        <img src="img/ic_allday.png" class="allday" />
+        <span>09 AM - 05PM</span>
+      </a>
+      <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
+        <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
+        <div class="flex-grow-1 px-2">
+          <p class="text  f16 bold">Surgery</p>
+          <span>Christian Leupold-Wendling</span>
+        </div>
+        <img src="img/ic_allday.png" class="allday" />
+        <span>09 AM - 05PM</span>
+      </a>
+      <a href="/schedules-inner-level.html" class="listitem d-flex justify-content-between align-items-center">
+        <img class="avatar" src="img/ic_contact_avatar.png" alt="" />
+        <div class="flex-grow-1 px-2">
+          <p class="text  f16 bold">General Surgery</p>
+          <span>Christian Leupold-Wendling</span>
+        </div>
+        <img src="img/ic_allday.png" class="allday" />
+        <span>09 AM - 05PM</span>
+      </a>
+    </div>
 
-      <div class="bottom-nav row">
-        <a href="/home.html" class="col n1 active">
-          <div class="bg"></div>
-          <p>Home</p>
-        </a>
-        <a href="/directory.html" class="col n2">
-          <div class="bg"></div>
-          <p>Phone Directories</p>
-        </a>
-        <a href="/schedules.html" class="col n3">
-          <div class="bg"></div>
-          <p>My Schedules</p>
-        </a>
-        <a href="/on-call.html" class="col n4">
-          <div class="bg"></div>
-          <p>On Call Schedules</p>
-        </a>
-        <a href="#" class="col n5">
-          <div class="bg"></div>
-          <p>Secure Messaging</p>
-        </a>
-      </div>
-    </page>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="bottom-nav row">
+      <a href="/home.html" class="col n1 active">
+        <div class="bg"></div>
+        <p>Home</p>
+      </a>
+      <a href="/directory.html" class="col n2">
+        <div class="bg"></div>
+        <p>Phone Directories</p>
+      </a>
+      <a href="/schedules.html" class="col n3">
+        <div class="bg"></div>
+        <p>My Schedules</p>
+      </a>
+      <a href="/on-call.html" class="col n4">
+        <div class="bg"></div>
+        <p>On Call Schedules</p>
+      </a>
+      <a href="#" class="col n5">
+        <div class="bg"></div>
+        <p>Secure Messaging</p>
+      </a>
+    </div>
+  </page>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      function calendarCollapse() {
-        $("#calendar-full").collapse("toggle")
-        $("#calendar-rows").collapse("toggle")
-      }
-    </script>
-  </body>
+  <script>
+    function calendarCollapse() {
+      $("#calendar-full").collapse("toggle")
+      $("#calendar-rows").collapse("toggle")
+    }
+  </script>
+</body>
+
 </html>
